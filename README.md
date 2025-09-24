@@ -1,13 +1,33 @@
-# Sub-Seasonal Temperature Analysis
+# Sub-seasonal Weather Forecasting
 
-Exploratory analysis of WiDS Datathon 2023 dataset to understand **14-day mean temperatures** across US locations.
+## Overview
 
-## Dataset
+This project focuses on improving sub-seasonal forecasts (15–45+ days) for temperature and precipitation using machine learning combined with physics-based weather models. The aim is to help communities and industries adapt to extreme weather events like heat waves, droughts, floods, and hurricanes.
 
-Includes weather & climate forecasts, observed variables (temperature, precipitation, wind, humidity), location info, and climate indices (MEI, MJO).
+## Project steps
 
-## Goals
+1. **EDA (Exploratory Data Analysis)**
 
-- Visualize distributions and trends
-- Explore correlations between models and observations
-- Analyze patterns across locations and climate regions
+   * Explore the dataset.
+   * Check correlations and missing values.
+
+2. **Data Preprocessing**
+
+   * Clean and prepare the data.
+   * Handle missing values, scaling, and feature engineering.
+
+3. **Model Training**
+
+   * Train models (e.g., XGBoost, CatBoost, LightGBM, or others).
+   
+
+4. **Model Evaluation**
+
+   * Evaluate using metrics like RMSE
+   * Compare with baseline 
+
+5. **Hyperparameter Search (Optuna)**
+
+   * Use Optuna to tune model parameters.
+   * Save the best models and results.
+
